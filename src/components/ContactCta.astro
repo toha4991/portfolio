@@ -1,0 +1,20 @@
+---
+import { site } from '@data/site';
+import ContactBar from './ContactBar.astro';
+---
+
+<section
+  id="contact"
+  class="mt-12 mb-22 scroll-mt-24 border-t border-navy-lighter/60 pt-8 lg:scroll-mt-8"
+  aria-labelledby="contact-cta-heading"
+>
+  <h2 id="contact-cta-heading" class="mb-3 text-sm font-semibold uppercase tracking-wider text-white">
+    Get in touch
+  </h2>
+  <p class="body-copy mb-4 max-w-prose">
+    Interested in DevOps, platform, or SRE-focused work around AWS, Kubernetes, automation, and production reliability.
+    Reach me at <a class="subtle-link" href={`mailto:${site.contact.email}`}>{site.contact.email}</a> or connect through the links below.
+  </p>
+  <p class="body-copy mb-4 text-sm">{site.contact.location}</p>
+  <ContactBar />
+</section>

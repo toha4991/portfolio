@@ -1,0 +1,28 @@
+---
+import { site } from '@data/site';
+import { Icon } from 'astro-icon/components';
+
+const links = [
+  { href: site.contact.github, label: 'GitHub', icon: 'ph:github-logo' },
+  { href: site.contact.gitlab, label: 'GitLab', icon: 'ph:gitlab-logo' },
+  { href: site.contact.linkedin, label: 'LinkedIn', icon: 'ph:linkedin-logo' },
+  { href: site.contact.resume, label: 'Resume', icon: 'ph:file-text' },
+  { href: `mailto:${site.contact.email}`, label: 'Email', icon: 'ph:envelope-simple' },
+].filter((link) => link.href);
+---
+
+<div class="flex items-center gap-1">
+  {
+    links.map((link) => (
+      <a
+        href={link.href}
+        class="subtle-link inline-flex h-9 w-9 items-center justify-center rounded"
+        target={link.href.startsWith('mailto:') ? undefined : '_blank'}
+        rel={link.href.startsWith('mailto:') ? undefined : 'noreferrer'}
+        aria-label={link.label}
+      >
+        <Icon name={link.icon} class="h-6 w-6" />
+      </a>
+    ))
+  }
+</div>

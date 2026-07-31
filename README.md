@@ -1,110 +1,80 @@
-### Share Your Links
+# Projects Portfolio Template
 
-[![Version](https://img.shields.io/badge/version-0.0.1-blue.svg)](https://github.com/tu_usuario/tu_repositorio)
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](https://opensource.org/licenses/MIT)
+A responsive Astro starter portfolio template designed to be easy to customize as a reusable template.
 
-![Portada](/public/img/portada.png)
-#### Description
+![Astro](https://img.shields.io/badge/Astro-6.x-FF5D01?logo=astro&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4.x-38B2AC?logo=tailwindcss&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-green)
 
+## ✨ Features
+- **Centralized Data:** All content in `/data/` for easy customization
+- **Built-in Themes**: Choose a costum theme color palettes from a single config file.
+- **Fully Responsive:** Optimized for mobile, tablet, and desktop.
+- **Performance:** Optimized for perfect Lighthouse scores.
+- **SEO Ready:** Open Graph and semantic HTML
+- **Fast** — Static-first architecture
 
-## Use this template by running:
+## 🚀 Getting Started
+Make sure you have **Node.js** v22.12.0 or higher installed on your machine.
 
-```bash
-npm create astro@latest -- --template SofiDevO/allmylinks
-``` 
+1. Click **Use this template** on this repository.
+2. Choose **Create a new repository**.
+3. Clone your new repository: `git clone <your-repo-url>`
+4. Navigate to your repo: `cd <your-repo-name>`
+5. Install dependencies: `npm install`
+6. Start development server: `npm run dev`
+7. Update your content in `/data`
+8. Deploy on your preferred platform
 
-Welcome to Share Your Links! This project is powered by Astro and CSS magic. If you're looking to create a sleek and customizable page to showcase all your important links, you're in the right place!
+### Replace Content
 
-You can find this template in [Astro Themes](https://portal.astro.build/themes/shareyourlinks/)
+Edit **`data/site.ts`** to update:
 
-#### Quick Links
+- Hero section texts
+- About section texts
+- experience cards content 
+- Archive projects page content
+- Contact links
 
-Find all relevant links, including social media and websites, in one place: [Share Your Links](https://example.com/share-your-links)
+### Replace Images
 
-#### Installation
+Replace the sample images in **`/public`** with your own:
 
-1. Clone this repository.
-2. Navigate to the project directory.
-3. Install dependencies using `npm install`.
+- Featured projects cards images
+- Favicon/logo
 
-## Usage
+### 🎨 Theme Switching
+This template comes with multiple built-in color palettes. To change the theme of your portfolio, 
+open `src/config.ts` and update the `baseTheme` variable to one of the available options:
+`'default', 'strategic', 'innovator', 'executive'`
 
-Get started in no time:
-
-- **Development**: Run `npm run dev` or `npm start` to start the development server.
-- **Build**: Use `npm run build` to generate a production build.
-- **Preview**: Run `npm run preview` to preview the production build.
-- **Astro CLI**: Explore additional Astro CLI commands using `npm run astro`.
-### Updating User Links
-
-To customize the links displayed in your application, follow these steps:
-
-1. Open the `src/data.js` file in your project.
-2. Locate the section containing the information of the user links (`userLinks`).
-3. Modify each object within the `userLinks` array with the information you want to display. You can change the link title, the link itself, and the associated icon.
-4. Save the changes in the `data.js` file.
-
-Here's an example of how you can change the information of the links:
-
-```javascript
-const userLinks = [
-    {
-        title: "My website",
-        link: "https://mywebsite.com",
-        icon: "ant-design:global-outlined"
-    },
-    {
-        title: "Personal blog",
-        link: "https://blog.mywebsite.com",
-        icon: "fa-solid:book"
-    },
-    {
-        title: "Contact",
-        link: "mailto:email@example.com",
-        icon: "bi:chat-right-dots"
-    },
-]
+## 📁 Project Structure
+```
+├── public/              # Static assets
+├── data/                # jsON files for project data
+├── src/
+│   ├── components/      # Reusable Astro components
+│   ├── layouts/         # Layout templates with Meta tags
+│   ├── pages/           # Site routes (index.astro)
+│   └── styles/          # global css styles
+│   └── config.ts        # Global site configuration
+├── astro.config.mjs     # Astro configuration
+└── tsconfig.json        # Typescript configuration
 ```
 
-5. Once you have updated the information of the links in the `userData.js` file, the changes will be automatically reflected in your application when you rebuild or run it.
+## 🛠 Commands 
 
-Remember to ensure you provide valid links and that the icons used are available in the icon library you are using in your project.
+| Command                   | Action                                           |
+| :------------------------ | :----------------------------------------------- |
+| `npm install`             | Installs dependencies                            |
+| `npm run dev`             | Starts local dev server at `localhost:4321`      |
+| `npm run build`           | Build your production site to `./dist/`          |
+| `npm run preview`         | Preview your build locally, before deploying     |
+| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
+| `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-### Including Icons
+## 🤝 Contributions
+Please read the [Contributing Guide](CONTRIBUTING.md) before opening a PR.
 
-To import icons into your project, we use the Iconify CDN and utilize the `icon` attribute of each Iconify icon in the `userLinks`. For example, to use an icon of React:
-
-```html
-<iconify-icon icon="logos:react" width="27" height="27"></iconify-icon>
-```
-
-In our `data.js`, we only need to specify the icon identifier, like this:
-
-```javascript
-{
-    title: "React",
-    link: "https://reactjs.org/",
-    icon: "logos:react"
-}
-```
-
-Here's how you can add the Iconify script to the `<head>` section of your project:
-
-```html
-<head>
-    <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
-</head>
-```
-
-Once you include this script, you can use any Iconify icon by specifying its identifier in the `icon` attribute. Make sure to replace `"logos:react"` with the appropriate icon identifier for the icons you want to use. You can find a variety of icons available on the [Iconify logos page](https://icon-sets.iconify.design/logos/).
-#### Customization
-
-Feel free to modify this project to suit your needs! Whether it's changing the layout, adding new features, or tweaking the styles, let your creativity flow.
-
-#### Author
-
-- SofiDev
-
-#### License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details. Feel free to explore, modify, and make it your own!
+## 📝 License
+This project is licensed under the [MIT License](LICENSE). You are free to use, modify, and distribute this template.
