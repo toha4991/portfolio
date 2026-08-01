@@ -6,7 +6,7 @@
  */
 
 export const site = {
-  url: 'https://anton.dev',
+  url: 'https://toha4991.github.io',
   meta: {
     title: 'Anton Gordynski | DevOps Engineer',
     description:
