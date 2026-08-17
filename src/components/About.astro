@@ -1,6 +1,8 @@
 ---
 import { site } from '@data/site';
 
+type AboutBullet = string | { label: string; text: string };
+
 type AboutParagraph =
   | string
   | {
@@ -8,7 +10,7 @@ type AboutParagraph =
       link?: { text: string; href: string };
       textAfter?: string;
       heading?: string;
-      bullets?: string[];
+      bullets?: AboutBullet[];
       techItems?: string[];
     };
 
@@ -41,12 +43,20 @@ const paragraphs = site.about.paragraphs as readonly AboutParagraph[];
             )}
             {p.heading && (
               <div class="space-y-2">
-                <p class="font-semibold text-white-soft">{p.heading}</p>
+                <p class="font-semibold text-maintext">{p.heading}</p>
 
                 {p.bullets && (
                   <ul class="list-disc space-y-1 pl-5">
                     {p.bullets.map((bullet) => (
-                      <li>{bullet}</li>
+                      <li>
+                        {typeof bullet === 'string' ? (
+                          bullet
+                        ) : (
+                          <>
+                            <strong class="font-semibold text-maintext">{bullet.label}</strong> {bullet.text}
+                          </>
+                        )}
+                      </li>
                     ))}
                   </ul>
                 )}

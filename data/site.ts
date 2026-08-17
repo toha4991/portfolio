@@ -23,34 +23,28 @@ export const site = {
   },
   about: {
     paragraphs: [
-      'I am a mid-level DevOps Engineer focused on AWS-based infrastructure, CI/CD automation, Kubernetes operations, and production reliability. My work combines infrastructure ownership, incident troubleshooting, and automation that reduces manual deployment effort.',
-      'I like turning unclear operational paths into repeatable workflows: Terraform modules, Ansible playbooks, GitLab pipelines, Helm-based deployments, and runbooks that help teams ship with less friction.',
+      'I am a DevOps Engineer focused on building and operating reliable cloud infrastructure, automating delivery workflows, and improving how applications are deployed and supported in production.',
+      'My work spans cloud infrastructure, Kubernetes operations, CI/CD, observability, and incident troubleshooting. I particularly enjoy turning manual or unclear operational processes into repeatable automation: whether that is a Terraform module, an Ansible playbook, a deployment pipeline, or a runbook that helps teams release safely with less manual work and makes the next incident easier to resolve.',
       {
-        heading: 'Current focus areas',
+        heading: 'Cloud platforms',
         bullets: [
-          'Operating AWS environments with services such as EKS, IAM, Route53, CloudWatch, S3, ACM, Secrets Manager, and load balancers',
-          'Deploying and supporting Kubernetes workloads with Helm, ingress controllers, cert-manager, configuration management, and rollback-friendly pipelines',
-          'Using Prometheus, Grafana, CloudWatch, ELK, and OpenSearch to investigate incidents, understand application behavior, and improve reliability',
-          'Improving tenant provisioning, deployment documentation, and operational runbooks for multi-environment systems',
+          {
+            label: 'AWS:',
+            text: 'EKS, IAM, CloudWatch, S3, ACM, Secrets Manager, and load balancing',
+          },
+          {
+            label: 'GCP:',
+            text: 'GKE, Cloud Storage, Cloud Monitoring, IAM, Secret Manager, and Cloud Load Balancing',
+          },
         ],
       },
       {
-        heading: 'Core stack',
-        techItems: [
-          'AWS',
-          'Kubernetes',
-          'Terraform',
-          'Ansible',
-          'GitLab CI/CD',
-          'Helm',
-          'Docker',
-          'Prometheus',
-          'Grafana',
-          'CloudWatch',
-          'OpenSearch',
-          'Python',
-          'SQL',
-          'Linux',
+        heading: 'Current focus areas',
+        bullets: [
+          'Deploying and operating Kubernetes workloads using Helm, ingress controllers, cert-manager, configuration management, and rollback-friendly delivery pipelines',
+          'Troubleshooting production systems using Prometheus, Grafana, CloudWatch, ELK, and OpenSearch to understand application behavior and improve reliability',
+          'Automating infrastructure provisioning and application delivery with Terraform, Ansible, GitLab CI/CD, and supporting tooling',
+          'Improving operational processes, deployment documentation, and runbooks for multi-environment systems',
         ],
       },
     ],
