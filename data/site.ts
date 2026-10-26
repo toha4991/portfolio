@@ -16,7 +16,7 @@ export const site = {
     name: 'Anton Gordynski',
     role: 'DevOps Engineer',
     tagline:
-      'I build and operate reliable AWS and Kubernetes infrastructure with Terraform, Ansible, Helm, GitLab CI/CD, and practical observability.',
+      'I build and operate reliable infrastructure with Terraform, Ansible, Helm, GitLab CI/CD, and practical observability.',
     contact: 'Based in Krakow, Poland. Open to DevOps, platform, and SRE-focused engineering roles.',
     avatarSrc: '/images/anton-gordynski.jpg',
     avatarAlt: 'Anton Gordynski',
