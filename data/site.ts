@@ -94,29 +94,6 @@ export const site = {
   ],
   featuredProjects: [
     {
-      title: 'Tenant Provisioning Automation',
-      period: '2024 - 2026',
-      summary:
-        'Improved a slow, manual tenant setup process across several environments by turning repeatable operational work into documented automation.',
-      solution:
-        'Combined process review, Terraform and Ansible automation, GitLab deployment workflows, configuration management, and operational documentation to make provisioning more predictable.',
-      impact:
-        'Reduced setup time for a new tenant from roughly six months to three months, and later to around one and a half months.',
-      image: '',
-      imageAlt: '',
-      repo: '',
-      techCategories: [
-        {
-          category: 'Automation',
-          items: ['Terraform', 'Ansible', 'GitLab CI/CD', 'Runbooks'],
-        },
-        {
-          category: 'Operations',
-          items: ['AWS', 'Multi-environment deployments', 'Configuration management', 'Tenant provisioning'],
-        },
-      ],
-    },
-    {
       title: 'Kubernetes Python/PostgreSQL App',
       period: 'Public lab project',
       summary:
@@ -171,12 +148,6 @@ export const site = {
       'A concise archive of public lab projects and representative operational work. Public repositories are linked from the featured project cards where available.',
   },
   projectArchive: [
-    {
-      date: '2026',
-      project: 'Tenant provisioning automation',
-      role: 'DevOps / SRE',
-      techStack: 'Terraform, Ansible, GitLab CI/CD, AWS, runbooks',
-    },
     {
       date: '2026',
       project: 'Kubernetes Python/PostgreSQL app',
