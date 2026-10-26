@@ -104,7 +104,7 @@ export const site = {
         'Shows practical Kubernetes deployment knowledge beyond listing tools: workloads, service configuration, database dependencies, and repeatable environment setup.',
       image: '',
       imageAlt: '',
-      repo: 'https://github.com/toha4991/k8s-python-postgresql-app',
+      repo: 'https://gitlab.com/anton.gordynskii/k8s-python-postgresql-app',
       techCategories: [
         {
           category: 'Platform',
@@ -153,14 +153,14 @@ export const site = {
       project: 'Kubernetes Python/PostgreSQL app',
       role: 'DevOps',
       techStack: 'Kubernetes, Docker, PostgreSQL, manifests',
-      repo: 'https://github.com/toha4991/k8s-python-postgresql-app',
+      repo: 'https://gitlab.com/anton.gordynskii/k8s-python-postgresql-app',
     },
     {
       date: '2026',
       project: 'Kubernetes app provisioning',
       role: 'Infrastructure automation',
       techStack: 'Terraform, Ansible, Kubernetes, cloud prerequisites',
-      repo: 'https://github.com/toha4991/k8s-app-provisioning',
+      repo: 'https://gitlab.com/anton.gordynskii/k8s-app-provisioning',
     },
     {
       date: '2026',
