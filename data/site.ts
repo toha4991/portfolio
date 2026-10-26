@@ -127,7 +127,7 @@ export const site = {
         'Demonstrates the infrastructure-as-code habits used in production work: repeatability, remote-friendly provisioning, and clearer deployment handoff.',
       image: '',
       imageAlt: '',
-      repo: 'https://github.com/toha4991/demo-app-provisioning',
+      repo: 'https://gitlab.com/anton.gordynskii/demo-app-provisioning',
       techCategories: [
         {
           category: 'Infrastructure',
@@ -167,14 +167,14 @@ export const site = {
       project: 'Demo app provisioning',
       role: 'Infrastructure automation',
       techStack: 'AWS, Terraform, Ansible, Docker',
-      repo: 'https://github.com/toha4991/demo-app-provisioning',
+      repo: 'https://gitlab.com/anton.gordynskii/demo-app-provisioning',
     },
     {
       date: '2026',
       project: 'Python/PostgreSQL demo app',
       role: 'Cloud deployment',
       techStack: 'Python, PostgreSQL, Docker, AWS ECS',
-      repo: 'https://github.com/toha4991/python-postgresql-demo-app',
+      repo: 'https://gitlab.com/anton.gordynskii/python-postgresql-demo-app',
     },
     {
       date: '2026',
